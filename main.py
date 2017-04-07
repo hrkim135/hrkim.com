@@ -6,4 +6,8 @@ from bottle import *
 def index():
     return template("index")
 
+@route("/todo")
+def todo():
+    return template("todo")
+
 run(host="localhost", port=8080)
